@@ -146,6 +146,9 @@ sumOfT typ = case typ of
 sumOf :: SingIType t1 => GetIType (FF :-> t1)
 sumOf = sumOfT singIType
 
+exampleSum :: Integer
+exampleSum = sumOf (1 :: Integer) (2 :: Integer) (3 :: Integer)
+
 stupidShowT :: SIType t1 -> GetIType t1 -> String
 stupidShowT typ = case typ of
     SFF -> \x -> show x

@@ -39,3 +39,5 @@ $(recursiveTypes [d|
 $(recursiveTypes [d|
     data TP a = FFa a | (:-->) (TypeDummy -> TypeDummy)
     |])
+
+-- TypeDummy is an empty type defined in TemplateTypeRec, used only to specify the shape of the semantics of given constructor
